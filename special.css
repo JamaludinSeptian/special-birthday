@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #222831;
+
+  display: grid;
+  place-items: center;
+}
+.judul {
+  padding: 150px 0;
+  height: 1000px;
+  text-align: center;
+}
+.judul h1 {
+  color: rgb(236, 235, 235);
+  font-size: 70px;
+  margin: 80px 0;
+}
+.button-primary {
+  padding: 40px 80px;
+  border-radius: 25px;
+  border: none;
+  font-size: 24px;
+  color: rgb(244, 235, 235);
+  background-color: rgb(40, 40, 184);
+  transition: 0.2s;
+}
+
+.button-primary:hover {
+  cursor: pointer;
+  box-shadow: 31px 18px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 31px 18px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 31px 18px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.button-secondary {
+  padding: 20px 100px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  color: rgb(244, 235, 235);
+  background-color: rgb(40, 40, 184);
+  transition: 0.2s;
+}
+.button-secondary:hover {
+  cursor: pointer;
+  box-shadow: 31px 18px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 31px 18px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 31px 18px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+img {
+  height: 350px;
+  object-fit: cover;
+
+  -webkit-box-reflect: below 2px
+    linear-gradient(transparent, transparent, #0004);
+
+  transform-origin: center;
+  transform: perspective(800px) rotateY(25deg);
+  transition: 0.5s;
+}
+.container {
+  max-width: 600px;
+  max-height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.container:hover img {
+  opacity: 0.3;
+}
+.container img:hover {
+  transform: perspective(800px) rotateY(0deg);
+  opacity: 1;
+}
+
+#myDIV {
+  display: none;
+}
+#myFoto {
+  display: none;
+  margin: 150px 0;
+}
+
+#btn {
+  display: none;
+}
